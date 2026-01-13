@@ -69,10 +69,10 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-dark via-primary-blue to-primary-dark"
+      className="relative min-h-screen pt-24 flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-dark via-primary-blue to-primary-dark"
       style={{
         backgroundImage:
-          'linear-gradient(135deg, rgba(10,26,58,0.95) 0%, rgba(30,58,138,0.85) 50%, rgba(10,26,58,0.95) 100%), url("https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&q=80")',
+          'linear-gradient(135deg, rgba(10,26,58,0.95) 0%, rgba(30,58,138,0.85) 50%, rgba(10,26,58,0.95) 50%), url("https://i.ibb.co/Q76wNPhQ/hero.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundBlendMode: "overlay",
@@ -91,11 +91,11 @@ const Hero = () => {
             <div className="inline-flex items-center mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full">
               <Sparkles className="h-5 w-5 text-secondary-gold ml-2" />
               <span className="text-secondary-light font-semibold">
-                الرائدة منذ 1998
+                الرائدة منذ 2018
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white mb-3 leading-20">
               <span className="block">حلول متكاملة</span>
               <span className="block text-secondary-gold mt-2">
                 للمصاعد والسلالم الكهربائية
@@ -104,12 +104,12 @@ const Hero = () => {
           </div>
 
           {/* Subtitle */}
-          <div ref={subtitleRef} className="mb-12">
+          <div ref={subtitleRef} className="mb-8">
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
               نقدم حلولاً هندسية متكاملة في مجال المصاعد والسلالم الكهربائية
               <span className="text-secondary-gold font-bold">
                 {" "}
-                بخبرة 25 عاماً
+                بخبرة كبيرة تمتد لأكثر من 6 سنوات
               </span>
               ، مع التركيز على الجودة والأمان والابتكار
             </p>
@@ -118,7 +118,7 @@ const Hero = () => {
           {/* Buttons */}
           <div
             ref={buttonsRef}
-            className="flex flex-col sm:flex-row gap-6 justify-center mb-16"
+            className="flex flex-col sm:flex-row gap-6 justify-center mb-10"
           >
             <Link
               to="/projects"
@@ -130,7 +130,7 @@ const Hero = () => {
 
             <Link
               to="/contact"
-              className="group inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 text-lg"
+              className="group inline-flex items-center justify-center px-8 py-4 bg-blue-900/50 backdrop-blur-sm text-white font-bold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 text-lg"
             >
               <Play className="ml-3 h-5 w-5" />
               <span>طلب استشارة مجانية</span>

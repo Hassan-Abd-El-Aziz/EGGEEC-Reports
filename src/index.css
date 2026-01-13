@@ -13,6 +13,7 @@
   html {
     font-family: "Cairo", "Noto Sans Arabic", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {

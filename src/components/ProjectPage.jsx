@@ -12,15 +12,13 @@ import {
   Download,
 } from "lucide-react";
 import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
+  PieChart,
+  Pie,
+  Cell,
   Tooltip,
   Legend,
   ResponsiveContainer,
-  Cell,
+  CartesianGrid,
 } from "recharts";
 import { projectsData } from "../data/projectsData";
 import { documentsData } from "../data/documentsData";
@@ -77,7 +75,7 @@ const ProjectPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 pt-28">
       {/* Breadcrumb */}
       <nav className="flex items-center text-gray-600 mb-8" dir="rtl">
         <Link to="/" className="hover:text-primary-blue">
@@ -108,7 +106,7 @@ const ProjectPage = () => {
               className="flex-1 flex items-center justify-center px-4 py-3 bg-primary-dark text-white rounded-lg hover:bg-primary-blue transition-colors group"
             >
               <ExternalLink className="h-4 w-4 ml-2 group-hover:scale-110 transition-transform" />
-              <span>فتح في OneDrive</span>
+              <span>فتح ملفات المشروع في OneDrive</span>
             </button>
 
             <button
@@ -145,6 +143,7 @@ const ProjectPage = () => {
         </div>
 
         {/* Progress Chart */}
+        {/* Progress Chart */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 animate-on-load">
           <h2 className="text-2xl font-bold text-primary-dark mb-8 flex items-center">
             <BarChart3 className="ml-2 h-6 w-6" />
@@ -153,20 +152,15 @@ const ProjectPage = () => {
 
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={chartData} layout="vertical">
-                <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                <XAxis type="number" domain={[0, 100]} hide />
-                <YAxis type="category" dataKey="name" width={150} />
-                <Tooltip
-                  formatter={(value) => [`${value}%`, "التقدم"]}
-                  labelStyle={{ color: "#1E3A8A", textAlign: "right" }}
-                  contentStyle={{ textAlign: "right" }}
-                />
-                <Legend />
-                <Bar
+              <PieChart>
+                <Pie
+                  data={chartData}
                   dataKey="value"
-                  name="النسبة المئوية"
-                  radius={[0, 10, 10, 0]}
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={120}
+                  innerRadius={60} // لو عايزه Doughnut شيله لو Pie عادي
                 >
                   {chartData.map((entry, index) => (
                     <Cell
@@ -174,11 +168,20 @@ const ProjectPage = () => {
                       fill={entry.color || "#3B82F6"}
                     />
                   ))}
-                </Bar>
-              </BarChart>
+                </Pie>
+
+                <Tooltip
+                  formatter={(value) => [`${value}%`, "النسبة"]}
+                  contentStyle={{ textAlign: "right" }}
+                  labelStyle={{ textAlign: "right" }}
+                />
+
+                <Legend />
+              </PieChart>
             </ResponsiveContainer>
           </div>
 
+          {/* Summary Cards */}
           <div
             className={`grid grid-cols-2 md:grid-cols-${Math.min(
               chartData.length,

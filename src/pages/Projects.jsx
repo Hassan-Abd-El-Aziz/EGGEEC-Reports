@@ -5,15 +5,15 @@ import { MapPin, Calendar, ArrowLeft } from "lucide-react";
 
 const Projects = () => {
   return (
-    <div className="bg-gray-50 min-h-screen py-12">
+    <div className="bg-gray-50 min-h-screen py-12 pt-24">
       <div className="container mx-auto px-4">
         <header className="text-center mb-16" data-aos="fade-down">
           <h1 className="text-4xl font-bold text-primary-dark mb-4">
             مشاريعنا <span className="text-secondary-gold">المتميزة</span>
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            نفتخر بتنفيذ مجموعة من أكبر وأهم مشروعات المصاعد والسلالم الكهربائية في مصر،
-            متبعين أعلى معايير الجودة العالمية.
+            نفتخر بتنفيذ مجموعة من أكبر وأهم مشروعات المصاعد والسلالم الكهربائية
+            في مصر، متبعين أعلى معايير الجودة العالمية.
           </p>
         </header>
 
@@ -44,7 +44,7 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-primary-dark mb-3">
                   {project.name}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-6 line-clamp-2">
                   {project.description}
                 </p>
