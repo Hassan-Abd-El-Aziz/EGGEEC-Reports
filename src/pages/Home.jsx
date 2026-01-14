@@ -48,7 +48,7 @@ const Home = () => {
     },
     {
       icon: TrendingUp,
-      title: "خبرة 25 عاماً",
+      title: "خبرة أكثر من 6 سنوات",
       desc: "رائدة في مجال المصاعد في مصر",
     },
   ];
@@ -64,21 +64,21 @@ const Home = () => {
             className="text-3xl font-bold text-center text-primary-dark mb-12"
             data-aos="fade-up"
           >
-            لماذا تختار <span className="text-secondary-gold">مصر الخليج</span>؟
+            لماذا تختار <span className="text-blue-700">مصر الخليج</span>؟
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-primary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
                 <feature.icon className="h-12 w-12 text-secondary-gold mb-4" />
-                <h3 className="text-xl font-bold text-primary-dark mb-3">
+                <h3 className="text-xl font-bold text-secondary-gold mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">{feature.desc}</p>
+                <p className="text-gray-200">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -104,7 +104,7 @@ const Home = () => {
               الملفات والمستندات
             </Link>
             <Link
-              to="/project/1"
+              to="/projects"
               className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary-dark font-bold rounded-lg hover:bg-gray-100 transition-colors"
             >
               <ArrowLeft className="ml-2 h-5 w-5" />

@@ -46,7 +46,7 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            أكثر من 25 عاماً من الخبرة والتميز في توريد وتركيب وصيانة المصاعد
+            أكثر من 6 سنوات من الخبرة والتميز في توريد وتركيب وصيانة المصاعد
             والسلالم الكهربائية في السوق المصري.
           </p>
         </div>
@@ -63,8 +63,8 @@ const About = () => {
               <div className="space-y-4 text-gray-600 leading-relaxed text-lg text-justify">
                 <p>
                   تأسست شركة مصر الخليج (EGGEEC) برؤية واضحة لتغيير مفهوم التنقل
-                  الرأسي في مصر. على مدار عقدين، نجحنا في بناء اسم موثوق يجمع
-                  بين الخبرة المحلية والتقنيات العالمية.
+                  الرأسي في مصر. على مدار أكثر من 6 سنوات نجحنا في بناء اسم
+                  موثوق يجمع بين الخبرة المحلية والتقنيات العالمية.
                 </p>
                 <p>
                   بدأنا بمجموعة صغيرة من المهندسين المتميزين، واليوم نفخر
@@ -77,25 +77,25 @@ const About = () => {
               className="md:w-1/2 grid grid-cols-2 gap-4"
               data-aos="fade-right"
             >
-              <div className="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+              <div className="bg-primary-dark/80 p-8 rounded-2xl text-center shadow-sm">
                 <History className="h-10 w-10 text-secondary-gold mx-auto mb-4" />
-                <div className="text-3xl font-bold text-primary-dark">25+</div>
-                <div className="text-gray-500">عاماً من الخبرة</div>
+                <div className="text-3xl font-bold text-gray-100">6+</div>
+                <div className="text-secondary-gold">عاماً من الخبرة</div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+              <div className="bg-primary-dark/40 border-primary-dark border-1 p-8 rounded-2xl text-center shadow-sm">
                 <Award className="h-10 w-10 text-secondary-gold mx-auto mb-4" />
-                <div className="text-3xl font-bold text-primary-dark">500+</div>
-                <div className="text-gray-500">مشروع منفذ</div>
+                <div className="text-3xl font-bold text-primary-dark">50+</div>
+                <div className="text-secondary-gold">مشروع منفذ</div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+              <div className="bg-primary-dark/40 border-primary-dark border-1 p-8 rounded-2xl text-center shadow-sm">
                 <Users className="h-10 w-10 text-secondary-gold mx-auto mb-4" />
                 <div className="text-3xl font-bold text-primary-dark">100+</div>
-                <div className="text-gray-500">مهندس وفني</div>
+                <div className="text-secondary-gold">مهندس وفني</div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+              <div className="bg-primary-dark/80 p-8 rounded-2xl text-center shadow-sm">
                 <CheckCircle2 className="h-10 w-10 text-secondary-gold mx-auto mb-4" />
                 <div className="text-3xl font-bold text-primary-dark">24/7</div>
-                <div className="text-gray-500">دعم فني</div>
+                <div className="text-secondary-gold">دعم فني</div>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const About = () => {
             {values.map((val, idx) => (
               <div
                 key={idx}
-                className="bg-white p-10 rounded-3xl shadow-lg hover:shadow-xl transition-shadow border-b-4 border-secondary-gold"
+                className="bg-white p-10 rounded-3xl shadow-lg hover:shadow-xl transition-shadow border-b-4 border-primary-dark"
                 data-aos="fade-up"
                 data-aos-delay={idx * 150}
               >

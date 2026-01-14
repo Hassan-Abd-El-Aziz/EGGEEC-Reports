@@ -69,7 +69,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen pt-24 flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-dark via-primary-blue to-primary-dark"
+      className="relative min-h-screen pt-10 md:pt-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-dark via-primary-blue to-primary-dark"
       style={{
         backgroundImage:
           'linear-gradient(135deg, rgba(10,26,58,0.95) 0%, rgba(30,58,138,0.85) 50%, rgba(10,26,58,0.95) 50%), url("https://i.ibb.co/Q76wNPhQ/hero.png")',
@@ -96,7 +96,7 @@ const Hero = () => {
             </div>
 
             <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-white mb-3 leading-20">
-              <span className="block">حلول متكاملة</span>
+              <span className="block">شركة مصر الخليج</span>
               <span className="block text-secondary-gold mt-2">
                 للمصاعد والسلالم الكهربائية
               </span>
@@ -140,7 +140,7 @@ const Hero = () => {
           {/* Features */}
           <div
             ref={featuresRef}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-3"
           >
             {[
               { text: "جودة أوروبية", highlight: "100%" },
@@ -150,12 +150,12 @@ const Hero = () => {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="glass-effect p-4 rounded-xl backdrop-blur-sm"
+                className="glass-effect p-4 rounded-xl backdrop-blur-sm bg-secondary-gold/80 hover:bg-yellow-500"
               >
-                <div className="text-2xl font-bold text-secondary-gold mb-1">
+                <div className="text-2xl font-bold text-blue-800 mb-1">
                   {feature.highlight}
                 </div>
-                <div className="text-white text-sm">{feature.text}</div>
+                <div className="text-gray-800 text-sm">{feature.text}</div>
               </div>
             ))}
           </div>

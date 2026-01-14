@@ -163,11 +163,11 @@ const Navbar = () => {
 
               {/* Scrollable Content */}
               <div className="flex-1 overflow-y-auto px-6 py-6 space-y-4">
-                {navItems.map((item, index) =>
+                {navItems.map((item) =>
                   item.name === "المشاريع" ? (
                     <div
                       key={item.name}
-                      className="transition-all duration-300"
+                      className="transition-all duration-300 "
                     >
                       <button
                         onClick={() =>
@@ -203,7 +203,7 @@ const Navbar = () => {
                     <Link
                       key={item.name}
                       to={item.path}
-                      className="block text-white text-lg font-medium py-3 border-b border-white/10 hover:text-secondary-gold transition-colors"
+                      className="block text-white text-lg font-medium py-3 border-b border-white/10  hover:text-secondary-gold transition-colors"
                       onClick={() => {
                         setIsOpen(false);
                         setMobileProjectsOpen(false);
