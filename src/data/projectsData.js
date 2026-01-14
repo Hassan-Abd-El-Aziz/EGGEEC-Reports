@@ -7,7 +7,7 @@ export const projectsData = [
     endDate: "15 سبتمبر 2024",
     status: "جاري التنفيذ",
     statusColor: "text-green-600 bg-green-50",
-    url: "https://eggeec-my.sharepoint.com/my?id=%2Fpersonal%2Fh%5Fabdelaziz%5Feggeec%5Fcom%2FDocuments%2F%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9%2F%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%2FBO%20%2D%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A3%D8%B1%D8%B6%20%D8%A7%D9%84%D8%A8%D8%AD%D9%88%D8%AB%201&viewid=a0d988a5%2D7144%2D409a%2D8135%2D16c185a75639",
+    url: "https://eggeec-my.sharepoint.com/:f:/p/h_abdelaziz/IgA0fKfBsKOYRYsaGm4QPbXtASMhShxX9-jZuxZN8GZO_Aw?email=k.samir%40eggeec.com&e=Ejoc5Q",
 
     progress: 65,
     description: "توريد وتركيب عدد 152 مصعد BLT",
