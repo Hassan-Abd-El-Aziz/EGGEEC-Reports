@@ -36,7 +36,7 @@ const Projects = () => {
                   >
                     {project.status}
                   </span>
-                  <div className="text-secondary-gold font-bold">
+                  <div className="text-shadow-primary-dark font-bold">
                     {project.progress}%
                   </div>
                 </div>
@@ -51,11 +51,11 @@ const Projects = () => {
 
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center text-gray-500">
-                    <MapPin className="h-4 w-4 ml-2 text-secondary-gold" />
+                    <MapPin className="h-4 w-4 ml-2 text-primary-dark" />
                     <span className="text-sm">{project.location}</span>
                   </div>
                   <div className="flex items-center text-gray-500">
-                    <Calendar className="h-4 w-4 ml-2 text-secondary-gold" />
+                    <Calendar className="h-4 w-4 ml-2 text-primary-dark" />
                     <span className="text-sm">{project.startDate}</span>
                   </div>
                 </div>

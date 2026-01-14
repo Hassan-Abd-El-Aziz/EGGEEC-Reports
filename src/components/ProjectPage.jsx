@@ -119,21 +119,21 @@ const ProjectPage = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             <div className="flex items-center">
-              <MapPin className="h-5 w-5 text-secondary-gold ml-2" />
+              <MapPin className="h-5 w-5 text-red-800 ml-2" />
               <div>
                 <div className="text-gray-500 text-sm">الموقع</div>
                 <div className="font-semibold">{project.location}</div>
               </div>
             </div>
             <div className="flex items-center">
-              <Calendar className="h-5 w-5 text-secondary-gold ml-2" />
+              <Calendar className="h-5 w-5 text-blue-600 ml-2" />
               <div>
                 <div className="text-gray-500 text-sm">تاريخ البدء</div>
                 <div className="font-semibold">{project.startDate}</div>
               </div>
             </div>
             <div className="flex items-center">
-              <BarChart3 className="h-5 w-5 text-secondary-gold ml-2" />
+              <BarChart3 className="h-5 w-5 text-primary-blue ml-2" />
               <div>
                 <div className="text-gray-500 text-sm">متوسط التقدم</div>
                 <div className="font-semibold">{project.progress}%</div>
