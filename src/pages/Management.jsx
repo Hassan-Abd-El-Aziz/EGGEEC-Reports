@@ -9,7 +9,7 @@ const Management = () => {
         {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-primary-dark mb-4">
-            فريق <span className="text-secondary-gold">الإدارة</span>
+            فريق <span className="text-primary-dark">الإدارة</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             نخبة من الخبراء والمتخصصين في مجال المصاعد والسلالم الكهربائية
@@ -26,7 +26,7 @@ const Management = () => {
               data-aos-delay={member.id * 100}
             >
               {/* Card Top */}
-              <div className="relative h-48 bg-gradient-to-r from-primary-dark to-primary-blue">
+              <div className="relative h-48 bg-gradient-to-r from-primary-light via-primary-dark to-primary-light">
                 <div className="absolute bottom-0 right-0 left-0 p-6 text-white">
                   <div className="text-sm opacity-90">{member.department}</div>
                   <div className="text-xl font-bold mt-1">

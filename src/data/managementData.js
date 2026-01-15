@@ -1,14 +1,14 @@
 export const managementData = [
   {
     id: 1,
-    name: "المهندس/ أحمد السيد محمد",
+    name: "المهندس/ حسام الدين حسن علم الدين",
     position: "المدير التنفيذي",
     bio: "خبرة 25 عاماً في مجال المصاعد والسلالم الكهربائية، حاصل على شهادة PMP وماجستير في الهندسة الميكانيكية. قاد أكثر من 100 مشروع ناجح في مصر والخليج.",
     department: "الإدارة العليا",
     experience: "25 سنة",
-    email: "ahmed.sayed@msr-alkhaleej.com",
+    email: "hosam.hassan@msr-alkhaleej.com",
     phone: "+20 100 123 4567",
-    image: "management/ahmed-sayed.jpg",
+    image: "../assets/images/EGGEEC-logo.png",
   },
   {
     id: 2,
